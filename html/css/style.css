@@ -1,0 +1,225 @@
+
+.parallax {
+    /* The image used */
+    background-image: url("../images/ecotone2.jpg");
+
+    /* Set a specific height */
+    min-height: 600px;
+
+    /* Create the parallax scrolling effect */
+    margin-top: 0;
+    border-top: 0;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+
+@charset "UTF-8";
+.topbar {
+  height:10px;
+  background-color:#729f98;
+}
+ .bodycontainer{
+   height:1000px;
+   background-color:white;
+ }
+
+.title {
+	font-family: 'Shadows Into Light Two', cursive;
+	color: #ffffff;
+	text-align: center;
+	}
+
+.navtext {
+	font-family: 'Shadows Into Light Two', cursive;
+	color: #ffffff;
+	text-align: center;
+	}
+
+.container {
+	background-color: #729f98;
+	margin: 0;
+}
+
+.main-nav li {
+	list-style: none;
+}
+
+
+
+/*body styles*/
+
+body {
+	margin: 0;
+  padding-top: 0px;
+}
+
+a {
+	text-decoration: none;
+	}
+
+
+.bodytext {
+ 	font-family: 'Raleway', sans-serif;
+	line-height: 1.5em;
+	margin-left: 5em;
+	margin-right: 5em;
+}
+
+.headingtext {
+	font-family: 'Raleway', sans-serif;
+	line-height: 1.5em;
+	margin-left: 4em;
+	margin-right: 5em;
+
+}
+
+.carouselwidth {
+	width:50%;
+	margin: auto;
+}
+
+/*carousel*/
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+height:350px;
+    width: 50%;
+    margin:auto;
+	}
+
+/*flip animation modified from: david walsh */
+
+/* entire container, keeps perspective */
+.flip-container {
+	perspective: 100%;
+	margin-left: 5em;
+	margin-right: 2em;
+}
+	/* flip the pane when hovered */
+	.flip-container:hover .flipper, .flip-container.hover .flipper {
+		transform: rotateY(180deg);
+	}
+
+.flip-container, .front, .back {
+	width: 200px;
+	height: 325px;
+}
+
+/* flip speed goes here */
+.flipper {
+	transition: 1s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+	transform: rotateY(180deg);
+}
+
+
+/* media queries*/
+
+@media (min-width: 769px) {
+
+	body {
+		padding-top: 10em;
+
+	}
+
+	.main-header {
+		position: fixed;
+		background: #729f98;
+		width: 100%;
+		top: 0;
+		z-index: 9999;
+		padding-left: 5em;
+		padding-right: 10em;
+	}
+
+	.title {
+		float: left;
+		padding-left: 25px;
+	}
+
+
+	.main-nav {
+		display: inline;
+		float: right;
+	}
+
+	.main-nav li{
+		display: inline;
+		list-style: none;
+		margin-left: 20px;
+		padding-right: 25px;
+		float: left;
+	}
+
+	.skillsrec {
+	  padding-left: 10px;
+	  padding-right: 10px;
+	  margin: auto;
+	  width: 85%;
+	}
+
+
+	.skills {
+		float: left;
+		width: 50%;
+	}
+
+	.recs {
+		float: right;
+		width: 50%;
+	}
+
+	/* ---- Float clearfix ---- */
+
+	.clearfix::after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+
+}
+
+/*@media (min-width: 1025px) {
+
+
+	.container {
+		width: 80%;
+		max-width: 1150px;
+	}
+
+	.primary {
+		width: 40%;
+	}
+
+	.secondary,
+	.tertiary {
+		width: 30%;
+	}
+
+}
+*/
