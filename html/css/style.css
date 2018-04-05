@@ -46,7 +46,7 @@
 	}
 
 .container {
-	background-color: #729f98;
+	background-color: #3b3b19;
 	margin: 0;
 }
 
@@ -227,7 +227,7 @@ height:350px;
 
 	.main-header {
 		position: fixed;
-		background: #729f98;
+		background: #3b3b19;
 		width: 100%;
 		top: 0;
 		z-index: 9999;
