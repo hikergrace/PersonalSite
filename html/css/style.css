@@ -1,7 +1,7 @@
 
 .parallax {
     /* The image used */
-    background-image: url("../images/ecotone2.jpg");
+    background-image: url("../images/Ecotone2.jpg");
 
     /* Set a specific height */
     min-height: 600px;
@@ -16,11 +16,17 @@
 
 }
 
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
 
-@charset "UTF-8";
 .topbar {
   height:10px;
-  background-color:#729f98;
+  background-color:#3b3b19;
 }
  .bodycontainer{
    height:1000px;
@@ -53,7 +59,7 @@
 /*body styles*/
 
 body {
-	margin: 0;
+	margin-top: 0;
   padding-top: 0px;
 }
 
@@ -61,7 +67,15 @@ a {
 	text-decoration: none;
 	}
 
+.headshot {
+  border-radius: 50%;
+  border-width: thin;
+  border-color: darkgreen;
+  align-items: center;
+  height: 25%;
+  width: 25%;
 
+}
 .bodytext {
  	font-family: 'Raleway', sans-serif;
 	line-height: 1.5em;
@@ -142,10 +156,74 @@ height:350px;
 
 @media (min-width: 769px) {
 
-	body {
+	/* body {
 		padding-top: 10em;
 
-	}
+	} */
+  .centered {
+      position: absolute;
+      top: 45%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-family: 'Raleway';
+    	color: #ffffff;
+      text-align: center;
+      z-index: 1;
+
+  }
+
+  /* .corners {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      margin: 20px;
+      z-index: -1;
+
+  }
+  .corners:before {
+      display: block;
+      content: "";
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      top: -50em;
+      left: -10px;
+      border-top: 1px solid white;
+      border-left: 1px solid white;
+  }
+  .corners:after {
+      display: block;
+      content: "";
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      top: -10px;
+      right: -10px;
+      border-top: 1px solid white;
+      border-right: 1px solid white;
+  } */
+  span:before {
+      display: block;
+      content: "";
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      bottom: -10px;
+      left: -10px;
+      border-bottom: 1px solid white;
+      border-left: 1px solid white;
+  }
+  span:after {
+      display: block;
+      content: "";
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      bottom: -10px;
+      right: -10px;
+      border-bottom: 1px solid white;
+      border-right: 1px solid white;
+  }
 
 	.main-header {
 		position: fixed;
@@ -153,8 +231,9 @@ height:350px;
 		width: 100%;
 		top: 0;
 		z-index: 9999;
-		padding-left: 5em;
-		padding-right: 10em;
+    align-content: center;
+		padding-left: 35%;
+		 padding-right: 10em;
 	}
 
 	.title {
@@ -165,7 +244,7 @@ height:350px;
 
 	.main-nav {
 		display: inline;
-		float: right;
+		float: centered;
 	}
 
 	.main-nav li{
@@ -173,6 +252,7 @@ height:350px;
 		list-style: none;
 		margin-left: 20px;
 		padding-right: 25px;
+    align-content: center;
 		float: left;
 	}
 
@@ -194,6 +274,14 @@ height:350px;
 		width: 50%;
 	}
 
+  .alignment{
+    padding-left: .5em;
+  }
+
+
+  .alignmentR{
+    padding-left: 5em;
+  }
 	/* ---- Float clearfix ---- */
 
 	.clearfix::after {
